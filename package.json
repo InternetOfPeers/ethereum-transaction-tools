@@ -1,0 +1,24 @@
+{
+  "name": "unsigned-tx-generator",
+  "version": "1.0.0",
+  "description": "Generate unsigned Ethereum transactions and QR codes",
+  "main": "src/generate-unsigned-tx.js",
+  "scripts": {
+    "start": "node src/generate-unsigned-tx.js",
+    "generate": "node src/generate-unsigned-tx.js",
+    "decode": "node src/decode-tx.js",
+    "sign": "node src/sign-tx.js"
+  },
+  "dependencies": {
+    "ethers": "^6.8.0",
+    "qrcode": "^1.5.3",
+    "qrcode-terminal": "^0.12.0"
+  },
+  "keywords": [
+    "ethereum",
+    "transaction",
+    "qrcode"
+  ],
+  "author": "Giuseppe Bertone <giuseppe.bertone@proton.me>",
+  "license": "MIT"
+}
