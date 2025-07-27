@@ -168,6 +168,10 @@ if (require.main === module) {
         console.log('EIP-2930 (Type 1): node src/generate-unsigned-tx.js --type 1 --to 0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045 --value 1 --gasPrice 20 --nonce 0 --chainId 1');
         console.log('EIP-1559 (Type 2): node src/generate-unsigned-tx.js --type 2 --to 0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045 --value 1 --maxFeePerGas 2 --maxPriorityFeePerGas 1 --nonce 0 --chainId 1');
         console.log();
+        console.log('Examples with Access Lists:');
+        console.log('EIP-2930 with Access List: node src/generate-unsigned-tx.js --type 1 --to 0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045 --value 1 --gasPrice 20 --nonce 0 --chainId 1 --accessList \'[{"address":"0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045","storageKeys":["0x0000000000000000000000000000000000000000000000000000000000000001"]}]\'');
+        console.log('EIP-1559 with Access List: node src/generate-unsigned-tx.js --type 2 --to 0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045 --value 1 --maxFeePerGas 2 --maxPriorityFeePerGas 1 --nonce 0 --chainId 1 --accessList \'[{"address":"0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045","storageKeys":["0x0000000000000000000000000000000000000000000000000000000000000001","0x0000000000000000000000000000000000000000000000000000000000000002"]}]\'');
+        console.log();
     }
 }
 
