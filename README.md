@@ -4,6 +4,14 @@ A JavaScript utility that generates unsigned Ethereum transactions and creates Q
 
 There are also tools to decode existing transactions (signed and unsigned), and to sign unsigned transactions.
 
+## Tools
+
+```text
+- generate-unsigned-tx    # Generate unsigned transactions and QR codes
+- decode-tx               # Decode raw transaction data
+- sign-tx                 # Sign unsigned transactions
+```
+
 ## Features
 
 - Generate unsigned Ethereum transactions using ethers.js
@@ -144,15 +152,6 @@ The program generates:
    - `{unique-id}-binary.png`: Binary-based QR code for better compatibility
 3. Terminal QR code display for immediate scanning
 4. Filename format: `{unique-id}.png` where unique-id is a SHA256 hash of transaction content
-
-## File Structure
-
-```text
-src/
-├── generate-unsigned-tx.js  # Generate unsigned transactions and QR codes
-├── decode-tx.js            # Decode raw transaction data
-└── sign-tx.js              # Sign unsigned transactions
-```
 
 ## Example Output
 
